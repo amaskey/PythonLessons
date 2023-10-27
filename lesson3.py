@@ -16,8 +16,12 @@ Original file is located at
 #Array Creation
 
 import numpy as np
-a = np.array([1, 2, 3])
+a = np.array([[1, 2, 3],[1, 3, 5]])
 print(a)
+
+#Shape
+#np.shape allows you to see the dimensions of the array.
+np.shape(a)
 
 #Basic Operations**:
 
@@ -57,6 +61,10 @@ print(result)
 #Advanced Level:
 
 #Eigenvalues and Eigenvectors
+#Eigenvectors are a special set of vectors for a linear equation
+#eigenvectors and eigenvalues are important in fields of physics, engineering, computer science, and statistics.
+#Provide insight into property/behavior or linear transformations/systems.
+#The code uses a numpy METHOD to find eigen values/vectors
 import numpy as np
 a = np.array([[4, 2], [2, 4]])
 eigenvalues, eigenvectors = np.linalg.eig(a)
